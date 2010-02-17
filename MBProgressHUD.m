@@ -155,7 +155,7 @@
 #pragma mark -
 #pragma mark Lifecycle methods
 
-- (id)initWithWindow:(UIWindow *)window {
+- (id)initWithViewWindow:(UIWindow *)window {
     return [self initWithView:window];
 }
 
