@@ -556,14 +556,16 @@
     if (animated) {
         [UIView beginAnimations:nil context:NULL];
         [UIView setAnimationDuration:0.30];
-        self.alpha = 1.0f;
+        //self.alpha = 1.0f;
+        self.alpha = 0.6f;
         if (animationType == MBProgressHUDAnimationZoom) {
             self.transform = rotationTransform;
         }
         [UIView commitAnimations];
     }
     else {
-        self.alpha = 1.0f;
+        //self.alpha = 1.0f;
+        self.alpha = 0.6f;
     }
 }
 
@@ -579,7 +581,7 @@
         if (animationType == MBProgressHUDAnimationZoom) {
             self.transform = CGAffineTransformConcat(rotationTransform, CGAffineTransformMakeScale(0.5f, 0.5f));
         }
-        self.alpha = 0.02f;
+		self.alpha = 0.02f;
         [UIView commitAnimations];
     }
     else {
